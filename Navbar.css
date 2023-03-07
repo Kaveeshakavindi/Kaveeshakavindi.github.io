@@ -108,6 +108,7 @@ span{
   @media screen and (max-width: 1000px) {
     .navbar-container {
       flex-wrap: wrap;
+      padding-top: 70px;
       
     }
   
