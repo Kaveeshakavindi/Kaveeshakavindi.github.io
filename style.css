@@ -136,7 +136,7 @@ a{
 
 	main{
 		padding: 200px 20px;
-		height: 1792px;
+		
 		
 	}
 
@@ -156,23 +156,29 @@ a{
 		width: 100%;
 	}
 
-	#draw{
-		display: none;
-	}
+	
 
 	#name{
-		font-size: 40px;
+		font-size: 60px;
+	}
+
+	.draw{
+		align-items: center;
+	}
+
+	#main-container{
+		display: block;
 	}
 
 	#index-paragrapgh{
-		font-size: 30px;
+		font-size: 50px;
 		width: 80%;
 	}
 
 	.resume-btn{
 font-size: 30px;
 margin: 20px;
-margin-top: 200px;
+
 	}
 
 	

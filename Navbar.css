@@ -109,6 +109,7 @@ span{
     .navbar-container {
       flex-wrap: wrap;
       padding-top: 70px;
+      padding-bottom: 70px;
       
     }
   
