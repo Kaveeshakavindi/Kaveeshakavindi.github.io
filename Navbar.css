@@ -131,8 +131,8 @@ span{
       position: absolute;
       top: 60px;
       right: 0;
-      background-color: rgba(255, 255, 255, 0.515);
-      backdrop-filter: blur(10px);
+      background-color: rgb(255, 255, 255);
+      backdrop-filter: blur(50px);
       width: 100%;
       padding: 10px;
       box-sizing: border-box;
