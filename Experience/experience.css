@@ -5,7 +5,7 @@ body {
 	background-color: white;
 	background: linear-gradient(white, transparent),url(../assets/bg.jpg);
 	background-size: 100% 100%;
-	
+	justify-content: center;
 	
 
 }
@@ -21,6 +21,7 @@ main {
 
 h1, p{
     color: #333;
+	
 }
 
 #tit{
@@ -52,6 +53,7 @@ h1, p{
 .carousel{
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .carousel img{
@@ -61,62 +63,35 @@ h1, p{
 	padding: 30px;
 }
 .bone{
-	width: 75%;
-	margin: 0 auto;
-	position: relative;
+	display: grid;
+grid-template-columns: 1fr;
+grid-gap: 20px;
 }
 
-.bone::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	margin-left: 20px;
-	margin-right: 20px;
-	left: 50%;
-	width: 1px;
-	height: 100%;
-	background-color: white;
-  }
+
 
 .container {
-	height: 50vh;
-	 /* For demonstration purposes */
-	 
+	
+
+	 width: 94%;
 	 display: flex;
  background-color: #ffffff6f;
 border: 1px solid rgba(255, 255, 255, 0.176);
 border-radius: 20px;
-margin: 20px;
+
 backdrop-filter: blur(10px);
 box-shadow: 10px 5px 20px rgba(152, 152, 152, 0.413);
 align-items: center;
+text-align: center;
+justify-content: center;
+padding: 40px;
   }
 
-  .container-right{
-	flex: 1;
-    
-    word-wrap: break-word;
-    padding-right: 0px;
-	padding-left: 55vh;
-	max-width: 50vh;
-	text-align: left;
-	
 
-  }
-  .container-left {
-
-	flex: 1;
-    
-    word-wrap: break-word;
-    padding-left: 20px;
-	max-width: 50vh;
-	
-	text-align: right;
-
-  }
 
   #para{
 	color: rgba(0, 0, 0, 0.479);
+	text-align: center;
   }
   
   .reveal-on-scroll {
@@ -130,16 +105,7 @@ align-items: center;
 	opacity: 1;
 	transform: translateY(0);
   }
-  .bone:after {
-	content: "";
-	display: inline-block;
-	width: 1px;
-	height: 100%;
-	margin-left: 20px;
-	margin-right: 20px;
-	background-color: black;
-	vertical-align: top;
-  }
+ 
 
 /*footer*/  
 footer {
@@ -171,3 +137,50 @@ footer {
 	color: #777;
   }
 /*footer over*/  
+
+@media screen and (max-width: 1000px){
+
+	main{
+	 
+	  margin: 0;
+	  padding: 100px 20px;
+	 
+	 
+	}
+  
+	p{
+	  width: 94%;
+	  word-wrap: break-word;
+	  font-size: 13px;
+	  text-align: left;
+	  
+	  
+	 
+	}
+	.carousel{
+		display: grid;
+		grid-template-columns: 1fr;
+    	grid-gap: 20px;
+
+	
+	}
+
+
+
+	
+
+
+	.container{
+		
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		text-align: center;
+	}
+	
+  
+	
+	
+  
+	
+  }

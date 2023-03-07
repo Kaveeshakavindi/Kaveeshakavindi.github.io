@@ -56,7 +56,7 @@ h1, p{
     padding: 10vh;
     margin-top: 20px;
     border-radius: 20px;
-
+max-width: 100%;
 }
 
 .tit{
@@ -69,42 +69,44 @@ h1, p{
 
 table, th, td{
    
-    text-align: left;
+  text-align: left;
 
 }
 
 table{
 
-    border: none;
-    border-radius: 10px; 
-    width: 100%;
-    
+  border: none;
+  border-radius: 10px; 
+  width: 100%;
+  
 }
 th{
-   
-    border: none;
-    border-bottom: 1px solid hsla(0, 0%, 20%, 0.219);
-    color: #333333ac;
-    font-weight: 500;
-    font-size: 13px;
+ 
+  border: none;
+  border-bottom: 1px solid hsla(0, 0%, 20%, 0.219);
+  color: #333333ac;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 20px;
 }
 td{
-    padding: 20px;
-  border: none;
-  color: #33333375;
-  
-  
+  padding: 20px;
+border: none;
+color: #333333;
+
+
 }
 
 
 .bordered{
-    border: 1px solid hsla(0, 0%, 20%, 0.219);
-    background-color: white;
-    opacity: 70%;
-    backdrop-filter: blur(10px);
+  border: 1px solid hsla(0, 0%, 20%, 0.219);
+  background-color: white;
+  opacity: 70%;
+  backdrop-filter: blur(10px);
 box-shadow: 10px 5px 20px rgba(152, 152, 152, 0.413);
-    
+  
 }
+
 /*footer*/  
 footer {
 	background: linear-gradient(0deg, rgba(229,228,255,1) 0%, rgba(239,247,255,1) 48%, rgba(249,252,255,1) 63%, rgba(255,255,255,1) 100%);
@@ -135,3 +137,34 @@ footer {
 	color: #777;
   }
 /*footer over*/  
+
+@media screen and (max-width: 1000px){
+
+  main{
+   
+    padding: 100px 20px;
+    
+  }
+
+  p{
+    width: 75%;
+    word-wrap: break-word;
+    font-size: 15px;
+  }
+
+  table{
+    display: block;
+    overflow-x: auto;
+    font-size: 12px;
+  }
+
+  th,td{
+    display: block;
+    
+  }
+
+ 
+  
+
+  
+}

@@ -10,25 +10,50 @@
 </head>
 <body>
 
-	<div id="nav-container">
-		<header>
-			<nav>
-				<div id="complete-logo">
-					<div id="logo-container">/</div>
-					<div><a href="../index.html" classname="logo" id="logo"><span classname='logo-dash'>/</span>Kavi</a></div>
-				</div>
-				<ul>
-					
-					<li><a href="../index.html" id="item">Home</a></li>
+	<header>
+   
+        <nav class="navbar">
+            <div class="navbar-container">
+
+                <div class="complete-logo">
+                    <div class="logo-container">/</div>
+                    <a class="navbar-logo" href="../index.html">
+                        <span classname='logo-dash'>/</span>Kavi
+                    </a>
+                </div>
+
+              <div class="navbar-menu-icon">
+                <i class="fa fa-bars"></i>
+              </div>
+
+              <ul class="navbar-links">
+
+                <li><a href="../index.html" id="item" class="active">Home</a></li>
 					<li><a href="../Projects/projects.html" id="item">Projects</a></li>
-					<li><a href="../Experience/experience.html" id="item" class="active">Experience</a></li>
+					<li><a href="../Experience/experience.html" id="item">Experience</a></li>
 					<li><a href="../Studio/studio.html" id="item">Studio</a></li>
 					<li><a href="../Tools/tools.html" id="item">Skills & Tools</a></li>
-				</ul>
-				<button id="contact-btn"><a class="contact-button" href="../Contact/contact.html">Contact</a></button>
-			</nav>
-		</header>
-	</div>
+                    <li> <button class="contact-btn"><a class="contact-button" href="../Contact/contact.html">Contact</a></button></li>
+
+              </ul>
+
+             
+
+            </div>
+          </nav>
+          
+  </header>
+
+
+  <script>
+	const menuIcon = document.querySelector('.navbar-menu-icon');
+	const navbarLinks = document.querySelector('.navbar-links');
+
+	menuIcon.addEventListener('click', () => {
+	navbarLinks.classList.toggle('active');
+});
+
+</script>
 	
 	<main>
 
@@ -91,9 +116,9 @@
 		<div class="footer-container">
 		  <div class="row">
 			<div class="col-md-6">
-				<div id="complete-logo">
-					<div id="logo-container">/</div>
-					<div><a href="../index.html" classname="logo" id="logo"><span classname='logo-dash'>/</span>Kavi</a></div>
+				<div class="complete-logo">
+					<div class="logo-container">/</div>
+					<div><a href="../index.html" class="navbar-logo" id="logo"><span classname='logo-dash'>/</span>Kavi</a></div>
 				</div>
 			</div>
 			<div class="col-md-6">

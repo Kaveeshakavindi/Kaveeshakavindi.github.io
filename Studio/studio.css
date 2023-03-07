@@ -87,11 +87,12 @@ th{
     color: #333333ac;
     font-weight: 500;
     font-size: 13px;
+    padding: 20px;
 }
 td{
     padding: 20px;
   border: none;
-  color: #33333375;
+  color: #333333;
   
   
 }
@@ -104,6 +105,11 @@ td{
     backdrop-filter: blur(10px);
 box-shadow: 10px 5px 20px rgba(152, 152, 152, 0.413);
     
+}
+
+hr{
+  margin: 20px;
+  opacity: 20%;
 }
 
 /*footer*/  
@@ -136,3 +142,25 @@ footer {
 	color: #777;
   }
 /*footer over*/  
+
+@media screen and (max-width: 1000px){
+
+  main{
+   
+    padding: 100px 20px;
+    
+  }
+
+  p{
+    width: 75%;
+    word-wrap: break-word;
+    font-size: 15px;
+  }
+
+ 
+  .com-img{
+    width: 90%;
+  }
+
+  
+}

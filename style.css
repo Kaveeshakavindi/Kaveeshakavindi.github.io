@@ -131,3 +131,26 @@ a{
 	width: 100%;
 	height: 100%;
 }
+
+@media screen and (max-width: 1000px){
+
+	main{
+		padding: 100px 20px;
+	}
+
+	#resume-container{
+		display: block;
+		font-size: 10px;
+		
+	}
+
+	#index-paragrapgh{
+		font-size: 12px;
+		text-align: justify;
+		width: 100%;
+	}
+
+	#draw{
+		display: none;
+	}
+}
