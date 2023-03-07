@@ -142,20 +142,23 @@ footer {
 
   main{
    
-    padding: 100px 20px;
+    padding: 200px 20px;
     
+  }
+  h1{
+    font-size: 40px;
   }
 
   p{
     width: 75%;
     word-wrap: break-word;
-    font-size: 15px;
+    font-size: 30px;
   }
 
   table{
     display: block;
     overflow-x: auto;
-    font-size: 12px;
+    font-size: 20px;
   }
 
   th,td{

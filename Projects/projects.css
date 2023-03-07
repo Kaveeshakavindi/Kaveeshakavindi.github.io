@@ -143,20 +143,38 @@ footer {
 
     main{
      
-      padding: 100px 20px;
+        padding: 200px 20px;
       
+    }
+    h1{
+        font-size: 40px;
     }
   
     p{
       width: 75%;
       word-wrap: break-word;
-      font-size: 15px;
+      font-size: 30px;
     }
   
    #project-container{
     background-color: rgba(255, 255, 255, 0.671);
     backdrop-filter: blur(50px);
    }
+
+   #project-paragrapgh{
+font-size: 25px;
+   }
+    #project-title{
+        font-size: 30px;
+    }  
+
+    #git-btn a{ 
+        font-size: 20px;
+    }
+    #ic{
+        font-size: 20px;
+    }
+    
     
   
     

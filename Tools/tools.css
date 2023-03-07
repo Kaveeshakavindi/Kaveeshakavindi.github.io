@@ -106,28 +106,32 @@ footer {
 
   main{
    
-    padding: 100px 20px;
+    padding: 200px 20px;
     
+  }
+  h1{
+    font-size: 40px;
   }
 
   p{
     width: 75%;
     word-wrap: break-word;
-    font-size: 15px;
+    font-size: 30px;
   }
 
   .tool-container{
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 50px;
     margin-right: 40px;
     justify-content: center;
     align-items: center;
 
   }
   .tool-box{
-    font-size: 12px;
-    padding: 15px;
+    font-size: 30px;
+    padding: 30px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.629);
     backdrop-filter: blur(50px);
