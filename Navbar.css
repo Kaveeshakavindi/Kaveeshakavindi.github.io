@@ -170,7 +170,7 @@ span{
     .navbar-links.active {
       display: flex;
       flex-direction: column;
-
+color: #39166b;
     }
   }
   

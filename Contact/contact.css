@@ -141,29 +141,33 @@ footer {
 @media screen and (max-width: 1000px){
 
   main{
-    margin-top: 150px;
-    padding: 200px 20px;
+    margin-top: 400px;
     
   }
   h1{
     font-size: 60px;
+    text-align: left;
   }
 
   p{
     width: 75%;
     word-wrap: break-word;
     font-size: 50px;
+    text-align: left;
   }
 
   table{
     display: block;
     overflow-x: auto;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   th,td{
     display: block;
     
+  }
+  th{
+    font-size: 30px;
   }
 
  

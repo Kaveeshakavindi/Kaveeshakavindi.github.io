@@ -6,6 +6,7 @@ body {
     background: linear-gradient(white, transparent),url(../assets/bg.jpg);
     
 	background-size: 100% 100%;
+
     
 
 }
@@ -15,13 +16,18 @@ h1, p{
 
 main {
 	padding: 100px;
+    
 	
+}
+
+#project-paragrapgh{
+    text-align: justify;
 }
 .reveal-on-load{
 	opacity: 0;
     transform: translateX(-100%);
     animation: reveal 1s forwards;
-    text-align: justify;
+    text-align: left;
 }
 @keyframes reveal {
     to {
@@ -49,7 +55,7 @@ main {
     width: 90%;
     background: rgba(255, 255, 255, 0.45);
     color: #660ee1;
-    padding: 20px;
+    
     margin-bottom: 20px;
     font-size: 12px;
     backdrop-filter: blur(20px);
@@ -69,11 +75,15 @@ main {
     font-weight: bold;
     color: #333;
     padding-bottom: 20px;
+    padding: 20px;
 }
 
 #project-paragrapgh{
     padding-bottom: 20px;
+    padding: 20px;
 }
+
+
 
 #git-btn{
     background-color: #660ee10e;
@@ -85,6 +95,7 @@ main {
     font-size: 15px;
     cursor: pointer;
     border: 1px solid #660ee10e;
+    margin: 20px;
 }
 
 #git-btn:hover{
@@ -142,8 +153,8 @@ footer {
 @media screen and (max-width: 1000px){
 
     main{
-        margin-top: 150px;
-        padding: 200px 20px;
+        margin-top: 400px;
+       
       
     }
     h1{
@@ -159,6 +170,7 @@ footer {
    #project-container{
     background-color: rgba(255, 255, 255, 0.671);
     backdrop-filter: blur(50px);
+    
     width: 100%;
     
    }
@@ -176,6 +188,7 @@ font-size: 25px;
     #ic{
         font-size: 20px;
     }
+    
     
     
   

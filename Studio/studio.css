@@ -147,21 +147,27 @@ footer {
 
   main{
    
-    padding: 200px 20px;
-    margin-top: 150px;
+    margin-top: 400px;
     
   }
 h1{
   font-size: 60px;
+  text-align: left;
+ 
 }
 
   p{
     width: 75%;
     word-wrap: break-word;
     font-size: 50px;
+    text-align: left;
   }
   table{
-    font-size: 20px;
+    font-size: 30px;
+  }
+
+  th{
+    font-size: 30px;
   }
 
  
@@ -171,6 +177,7 @@ h1{
 
   .intro{
     font-size: 30px;
+    padding: 50px;
   }
 
   
