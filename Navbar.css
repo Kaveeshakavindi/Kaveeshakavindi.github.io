@@ -85,9 +85,10 @@ span{
     color: rgb(0, 119, 255);
   }
 
-  .navbar-links a.active{
+  .navbar-links a.active {
     color: #39166b;
-}
+    
+    }
 
   .contact-btn{
     border-style: none;
@@ -105,6 +106,8 @@ span{
   .contact-btn:hover{
     background-color: #3f0196;
   }
+
+
   
  
 
@@ -167,10 +170,11 @@ span{
 
     
   
-    .navbar-links.active {
-      display: flex;
-      flex-direction: column;
-color: #39166b;
-    }
+    .navbar-links a.active {
+      color: #39166b;
+      
+      }
+
+    
   }
   
