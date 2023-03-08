@@ -140,12 +140,12 @@ a{
 	main{
 		padding: 200px 20px;
 		
-		
+		margin-top: 150px;
 		
 	}
 
 	h1{
-		font-size: 40px;
+		font-size: 60px;
 	}
 
 	#resume-container{
