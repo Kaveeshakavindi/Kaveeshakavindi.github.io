@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 .navbar {
-    background: linear-gradient(180deg, rgba(210,233,255,1) 0%, rgba(242,249,255,1) 47%, rgba(255,255,255,1) 100%);
+    background: transparent;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     width: 100%;
+    top: 0;
+ left: 0;
     z-index: 1;
     position: fixed;
     font-family: 'Poppins', sans-serif;
-   
+    backdrop-filter: blur(50px);
+    border-bottom: 1px solid #3333331a;
   }
   
   .navbar-container {
@@ -22,6 +24,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    
+    
   }
   
   .navbar-logo {
@@ -115,7 +119,7 @@ span{
   
     .navbar-logo {
       margin-right: auto;
-      font-size: 40px;
+      font-size: 60px;
     }
 
     .logo-container{
@@ -125,7 +129,7 @@ span{
   
     .navbar-menu-icon {
       display: block;
-      font-size: 40px;
+      font-size: 60px;
     }
   
     .navbar-links {

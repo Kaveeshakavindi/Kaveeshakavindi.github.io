@@ -11,6 +11,7 @@ body {
 
 main {
 	padding: 100px;
+	height: 100vh;
 	
 }
 
@@ -59,6 +60,7 @@ main {
 	border: none;
 	transition: background-color 0.3s ease;
 	z-index: 2;
+	
   }
   
   .resume-btn:hover {
@@ -68,6 +70,7 @@ main {
   #resume-container{
 	display: flex;
 	align-items: center;
+	margin-top: 70px;
   }
 
   #animate{
@@ -136,6 +139,7 @@ a{
 
 	main{
 		padding: 200px 20px;
+		
 		
 		
 	}
