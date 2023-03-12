@@ -16,7 +16,8 @@ main {
 }
 
 #main-container{
-	height: 90vh;
+	
+	margin-bottom: 40vh;
 }
 
 #index-title{
@@ -249,7 +250,8 @@ a{
 	}
 
 	#main-container{
-		height: 180vh;
+	
+		margin-bottom: 10px;
 	}
 
 	h1{
