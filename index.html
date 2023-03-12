@@ -58,27 +58,46 @@
 
 
   <script>
-	const closeIcon =  document.querySelector('.navbar-close-icon')
+	const closeIcon = document.querySelector('.navbar-close-icon');
 	const menuIcon = document.querySelector('.navbar-menu-icon');
 	const navbarLinks = document.querySelector('.navbar-links');
 	const icon = document.querySelector('#icon');
 	const body = document.querySelector('body');
   
+	// Check if the user has set a preference for dark mode
+	const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  
+	// Apply the dark mode preference on page load
+	if (isDarkMode) {
+	  body.classList.add('dark-theme');
+	  icon.innerHTML = 'light_mode';
+	}
+  
+	// Toggle the navbar menu
 	menuIcon.addEventListener('click', () => {
 	  navbarLinks.classList.toggle('active');
 	});
   
+	// Toggle the dark mode
 	icon.addEventListener('click', () => {
 	  body.classList.toggle('dark-theme');
-	  
+  
+	  // Update the icon and the dark mode preference in local storage
+	  if (body.classList.contains('dark-theme')) {
+		icon.innerHTML = 'light_mode';
+		localStorage.setItem('darkMode', 'true');
+	  } else {
+		icon.innerHTML = 'dark_mode';
+		localStorage.setItem('darkMode', 'false');
+	  }
 	});
-
-	closeIcon.addEventListener('click', () =>{
-		navbarLinks.classList.remove('active')
-
+  
+	// Close the navbar menu
+	closeIcon.addEventListener('click', () => {
+	  navbarLinks.classList.remove('active');
 	});
-
   </script>
+  
   
 
 		  
