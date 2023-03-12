@@ -24,7 +24,7 @@ main {
 	color: #525151;
 	display: flex;
 	align-items: center;
-
+	font-size: 50px;
 	
 }
 
@@ -115,7 +115,8 @@ main {
   }
 
   .today-sub{
-	color: #04040461;
+	color: #04040490;
+	font-size: 16px;
   }
  
 
@@ -145,12 +146,12 @@ main {
 	border-radius: 30px;
 	padding: 5px 10px;
 	color: rgb(153, 0, 255);
-	font-size: 12px;
+	font-size: 16px;
   }
 
   .til-para{
-	color: #3333338c;
-	font-size: 15px;
+	color: #04040490;
+	font-size: 16px;
 	padding: 30px;
 	border-left: solid 1px #3333338c;
   }
@@ -179,14 +180,14 @@ main {
   }
 
   .code-file{
-	font-size: 12px;
+	font-size: 16px;
 	padding: 1px 5px;
 	
   }
 
   .code-container{
 	padding-left: 5px;
-	
+	font-size: 16px;
   }
 
   .code span{
@@ -254,16 +255,8 @@ a{
 		margin-bottom: 10px;
 	}
 
-	h1{
-		font-size: 60px;
-	}
 
-	#resume-container{
-		display: block;
-		font-size: 30px;
-		
-		
-	}
+	
 
 	#index-paragrapgh{
 		text-align: justify;
@@ -272,9 +265,7 @@ a{
 
 	
 
-	#name{
-		font-size: 60px;
-	}
+
 
 	.draw{
 		align-items: center;
@@ -285,7 +276,7 @@ a{
 	}
 
 	#index-paragrapgh{
-		font-size: 50px;
+		font-size: 30px;
 		width: 80%;
 	}
 
@@ -294,6 +285,14 @@ font-size: 30px;
 margin: 20px;
 
 	}
+
+	#resume-container{
+		display: block;
+		align-items: center;
+		margin-top: 70px;
+	  }
+
+	  
 
 	.til-container{
 		display: grid;
