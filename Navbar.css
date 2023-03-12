@@ -3,10 +3,47 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
 
+  :root{
+    --title-color: #333;
+    --span-title-color:rgb(0, 119, 255);
+    --bg-color:#fff;
+    --para-color:#04040490;
+    --black:#000;
+    --code-span: green;
+    --hashtag-bg:rgba(153, 0, 255, 0.09);
+    --hashtag-txt:rgb(153, 0, 255);
+    --code-bg:#d4ddff2d;
+    --code-border:#d4ddff;
+    --project-border:#660ee123;
+    --project-bg:#ffffff;
+    --nav-bg:rgba(210,233,255,1);
+    --logo-color:#660ee1;
+    --active-color:#39166b;
+  }
+
+  .dark-theme{
+    --title-color: #ffffffd2;
+    --span-title-color:rgb(255, 255, 255);
+    --bg-color:#181026;
+    --para-color:#ffffff90;
+    --black:#000;
+    --code-span: rgb(255, 255, 255);
+    --hashtag-bg:rgb(221, 169, 255);
+    --hashtag-txt:rgb(81, 0, 135);
+    --code-bg:#d4ddffa3;
+    --code-border:#d4ddff;
+    --project-border:#ffffff23;
+    --project-bg:#ffffff23;
+    --nav-bg: rgba(53, 0, 92, 0.45);
+    --logo-color:rgb(255, 255, 255);
+    --active-color: rgb(166, 119, 224);
+
+  }
+
 
 .navbar {
-  background: linear-gradient(180deg, rgba(210,233,255,1) 0%, rgba(242,249,255,1) 47%, rgba(255,255,255,1) 100%);
-    color: #fff;
+  background: linear-gradient(180deg, var(--nav-bg) 0%, var(--nav-bg) 20%, var(--bg-color)100%);
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +54,7 @@
     position: fixed;
     font-family: 'Poppins', sans-serif;
     backdrop-filter: blur(50px);
-    border-bottom: 1px solid #3333331a;
+    border-bottom: 1px solid var(--project-border);
   }
   
   .navbar-container {
@@ -36,7 +73,7 @@
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    color: #660ee1;
+    color: var(--logo-color);
   }
 
   .complete-logo{
@@ -66,12 +103,10 @@ span{
     font-size: 20px;
     cursor: pointer;
     display: none;
-    color: #333;
+    color: var(--title-color);
   }
 
-  .navbar-menu-icon:hover{
-    color: #660ee1;
-  }
+  
   
   .navbar-links {
     list-style: none;
@@ -86,17 +121,19 @@ span{
     font-weight: 500;
     font-size: 12px;
     text-decoration: none;
-    color: rgb(0, 119, 255);
+    color: var(--para-color);
   }
 
   .navbar-links a.active {
-    color: #39166b;
+    color: var(--active-color);
     font-weight: 600;
     }
 
+    
+
   .contact-btn{
     border-style: none;
-    background-color: #660ee1;
+    background-color: var(--active-color);
     border-radius: 40px;
     padding: 5px 20px;
     font-family: po;
@@ -111,22 +148,47 @@ span{
     background-color: #3f0196;
   }
   .navbar-links a.active1{
-    color: #39166b;
+    color: var(--active-color);
   }
 
+  #icon{
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff8b;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0.2px solid #d5d5d5;
+    cursor: pointer;
+    
+  }
+  .navbar-close-icon{
+    display: none;
+  }
+  
   
  
 
   
   @media screen and (max-width: 1000px) {
 
-   
+   .navbar-close-icon{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    padding: 50px;
+    cursor: pointer;
+   }
+
+
     .navbar-container {
       flex-wrap: wrap;
       padding-top: 70px;
       padding-bottom: 70px;
+      color: var(--para-color);
       
     }
+    
   
     .navbar-logo {
       margin-right: auto;
@@ -148,7 +210,7 @@ span{
       position: absolute;
       top: 60px;
       right: 0;
-      background-color: rgb(255, 255, 255);
+      background-color: var(--bg-color);
       backdrop-filter: blur(50px);
       width: 100%;
       padding: 10px;
@@ -184,9 +246,28 @@ span{
 
     }
 
+    .navbar-links.close{
+      display: none;
+    }
+
    
     .navbar-links a.active1{
-      color: #39166b;
+      color: var(--active-color);
+    }
+
+    #icon{
+      display: block;
+      height: 50px;
+      width: 50px;
+      background-color: #ffffff8b;
+      border-radius: 5px;
+      padding: 5px;
+      border: 0.2px solid #d5d5d5;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      
+      
     }
   }
   

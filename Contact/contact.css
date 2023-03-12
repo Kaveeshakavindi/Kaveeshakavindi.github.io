@@ -2,8 +2,8 @@ body {
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: white;
-	background: linear-gradient(white, transparent),url(../assets/bg.jpg);
+	background-color: var(--bg-color);
+	
     
 	background-size: 100% 100%;
 	
@@ -21,11 +21,11 @@ main {
 }
 
 h1, p{
-    color: #333;
+    color: var(--title-color);
 }
 
 #tit{
-	color: #660ee1;
+	color: var(--title-color);
 }
 
 .title-div{
@@ -62,7 +62,7 @@ max-width: 100%;
 .tit{
     padding-top: 20px;
     font-weight:500;
-    color: #333;
+    color: var(--title-color);
     font-size: 30px;
    padding-bottom: 50px;
 }
@@ -83,8 +83,8 @@ table{
 th{
  
   border: none;
-  border-bottom: 1px solid hsla(0, 0%, 20%, 0.219);
-  color: #333333ac;
+  border-bottom: 1px solid var(--project-border);
+  color: var(--para-color);
   font-weight: 500;
   font-size: 13px;
   padding: 20px;
@@ -92,51 +92,27 @@ th{
 td{
   padding: 20px;
 border: none;
-color: #333333;
+color: var(--para-color);
+
 
 
 }
 
 
 .bordered{
-  border: 1px solid hsla(0, 0%, 20%, 0.219);
-  background-color: white;
+  border: 1px solid var(--project-border);
+  background-color: var(--project-bg);
   opacity: 70%;
   backdrop-filter: blur(10px);
 box-shadow: 10px 5px 20px rgba(152, 152, 152, 0.413);
   
 }
 
-/*footer*/  
-footer {
-	background: linear-gradient(0deg, rgba(229,228,255,1) 0%, rgba(239,247,255,1) 48%, rgba(249,252,255,1) 63%, rgba(255,255,255,1) 100%);
-	padding: 30px 0;
-	border-top: 0.2px solid #00000013;
-  }
-  
-  .footer-container{
-	padding: 50px;
-  }
-  a{
-	text-decoration: none;
-  }
-  
-  .footer-contact ul {
-	list-style: none;
-	padding-left: 0;
-  }
-  
-  .footer-contact ul li {
-	margin-bottom: 10px;
-	font-size: 11px;
-	color: rgba(0, 0, 0, 0.513);
-  }
-  
-  .footer-contact ul li i {
-	margin-right: 10px;
-	color: #777;
-  }
-/*footer over*/  
+td a{
+  color: var(--para-color);
+}
+
+
 
 @media screen and (max-width: 1000px){
 

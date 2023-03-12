@@ -2,6 +2,7 @@
 <html>
 <head>
 	<script src="experience.js"></script>
+	<link rel="stylesheet" href="../footer.css">
 	<title>My Experiences</title>
 	<link rel="stylesheet" href="./experience.css">
 	<link rel="stylesheet" href="../Navbar.css">
@@ -28,12 +29,14 @@
 
               <ul class="navbar-links">
 
+				<li class="navbar-close-icon"><i class="fa fa-times"></i></li>
                 <li><a href="../index.html" id="item">Home</a></li>
 					<li><a href="../Projects/projects.html" id="item">Projects</a></li>
 					<li><a href="../Experience/experience.html" id="item"class="active1">Experience</a></li>
 					<li><a href="../Studio/studio.html" id="item">Studio</a></li>
 					<li><a href="../Tools/tools.html" id="item">Skills & Tools</a></li>
                     <li> <button class="contact-btn"><a class="contact-button" href="../Contact/contact.html">Contact</a></button></li>
+					<li> <img src="../assets/moon.png" id="icon" alt="moon"></li>
 
               </ul>
 
@@ -46,21 +49,34 @@
 
 
   <script>
+	const closeIcon =  document.querySelector('.navbar-close-icon')
 	const menuIcon = document.querySelector('.navbar-menu-icon');
 	const navbarLinks = document.querySelector('.navbar-links');
-
+	const icon = document.querySelector('#icon');
+	const body = document.querySelector('body');
+  
 	menuIcon.addEventListener('click', () => {
-	navbarLinks.classList.toggle('active');
-});
+	  navbarLinks.classList.toggle('active');
+	});
+  
+	icon.addEventListener('click', () => {
+	  body.classList.toggle('dark-theme');
+	  
+	});
 
-</script>
+	closeIcon.addEventListener('click', () =>{
+		navbarLinks.classList.remove('active')
+
+	});
+
+  </script>
 	
 	<main>
 
 		<div class="reveal-on-load">
 			<div class="title-div">
 		<h1>My Experiences</h1>
-		<img class="win-img" src="../assets/win.gif" alt="bot">
+		
 	</div>
 		<p class="exp-p">Join me as we walk through my journey of experiences. Scroll down for a web experience like no other, where I've honed my skills in social work, graphic design, software development, and project management. From leading software projects to designing stunning user interfaces, I bring a unique perspective to the table. Let's explore my passions together.</p>
 	</div>

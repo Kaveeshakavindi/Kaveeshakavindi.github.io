@@ -3,6 +3,7 @@
 <head>
 	
 	<title>Contact me</title>
+	<link rel="stylesheet" href="../footer.css">
 	<link rel="stylesheet" href="./contact.css">
 	<link rel="stylesheet" href="../Navbar.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,12 +30,14 @@
 
               <ul class="navbar-links">
 
+				<li class="navbar-close-icon"><i class="fa fa-times"></i></li>
                 <li><a href="../index.html" id="item" >Home</a></li>
 					<li><a href="../Projects/projects.html" id="item">Projects</a></li>
 					<li><a href="../Experience/experience.html" id="item">Experience</a></li>
 					<li><a href="../Studio/studio.html" id="item">Studio</a></li>
 					<li><a href="../Tools/tools.html" id="item">Skills & Tools</a></li>
                     <li> <button class="contact-btn"><a class="contact-button" href="../Contact/contact.html">Contact</a></button></li>
+					<li> <img src="../assets/moon.png" id="icon" alt="moon"></li>
 
               </ul>
 
@@ -47,20 +50,33 @@
 
 
   <script>
+	const closeIcon =  document.querySelector('.navbar-close-icon')
 	const menuIcon = document.querySelector('.navbar-menu-icon');
 	const navbarLinks = document.querySelector('.navbar-links');
-
+	const icon = document.querySelector('#icon');
+	const body = document.querySelector('body');
+  
 	menuIcon.addEventListener('click', () => {
-	navbarLinks.classList.toggle('active');
-});
+	  navbarLinks.classList.toggle('active');
+	});
+  
+	icon.addEventListener('click', () => {
+	  body.classList.toggle('dark-theme');
+	  
+	});
 
-</script>
+	closeIcon.addEventListener('click', () =>{
+		navbarLinks.classList.remove('active')
+
+	});
+
+  </script>
 	
 	<main>
 		<div class="reveal-on-load">
 			<div class="title-div">
 		<h1>Contact me</h1>
-		<img class="win-img" src="../assets/call.gif" alt="bot">
+		
 	</div>
 		<p>Get in touch with me anytime, through social media, e-mail, or phone number.</p>
 	</div>

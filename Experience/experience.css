@@ -2,8 +2,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: white;
-	background: linear-gradient(white, transparent),url(../assets/bg.jpg);
+	background-color: var(--bg-color);
 	background-size: 100% 100%;
 	justify-content: center;
 	
@@ -20,12 +19,12 @@ main {
 }
 
 h1, p{
-    color: #333;
+    color: var(--title-color);
 	
 }
 
 #tit{
-	color: #660ee1;
+	color: var(--title-color);
 }
 
 .title-div{
@@ -78,8 +77,8 @@ justify-content: center;
 
 	
 	
-	background-color: #ffffff6f;
-	border: 1px solid rgba(255, 255, 255, 0.176);
+	background-color: var(--project-bg);
+	border: 1px solid var(--project-border);
 	border-radius: 20px;
 
 	backdrop-filter: blur(10px);
@@ -93,7 +92,7 @@ justify-content: center;
 
 
   #para{
-	color: rgba(0, 0, 0, 0.479);
+	color: var(--para-color);
 	text-align: center;
 	padding: 20px;
 	text-align: left;
@@ -116,36 +115,7 @@ justify-content: center;
   }
  
 
-/*footer*/  
-footer {
-	background: linear-gradient(0deg, rgba(229,228,255,1) 0%, rgba(239,247,255,1) 48%, rgba(249,252,255,1) 63%, rgba(255,255,255,1) 100%);
-	padding: 30px 0;
-	border-top: 0.2px solid #00000013;
-  }
-  
-  .footer-container{
-	padding: 50px;
-  }
-  a{
-	text-decoration: none;
-  }
-  
-  .footer-contact ul {
-	list-style: none;
-	padding-left: 0;
-  }
-  
-  .footer-contact ul li {
-	margin-bottom: 10px;
-	font-size: 11px;
-	color: rgba(0, 0, 0, 0.513);
-  }
-  
-  .footer-contact ul li i {
-	margin-right: 10px;
-	color: #777;
-  }
-/*footer over*/  
+
 
 @media screen and (max-width: 1000px){
 

@@ -1,0 +1,30 @@
+footer {
+	background: linear-gradient(0deg, var(--nav-bg) 0%, var(--bg-color) 48%, var(--bg-color) 63%, var(--bg-color) 100%);
+
+	padding: 30px 0;
+	border-top: 0.2px solid var(--project-border);
+  }
+  
+  .footer-container{
+	padding: 50px;
+  }
+  a{
+	text-decoration: none;
+  }
+  
+  .footer-contact ul {
+	list-style: none;
+	padding-left: 0;
+  }
+  
+  .footer-contact ul li {
+	margin-bottom: 10px;
+	font-size: 11px;
+	color: var(--para-color);
+  }
+  
+  .footer-contact ul li i {
+	margin-right: 10px;
+	color: var(--para-color);
+  }
+/*footer over*/  

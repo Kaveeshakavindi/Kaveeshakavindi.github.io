@@ -6,6 +6,7 @@
 	<title>Kaveesha Fernando</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="Navbar.css">
+	<link rel="stylesheet" href="footer.css">
 </head>
 <body>
 
@@ -26,12 +27,15 @@
                 <i class="fa fa-bars"></i>
 				
               </div>
+
+			 
 			  
 		
 			  
 
               <ul class="navbar-links">
 
+					<li class="navbar-close-icon"><i class="fa fa-times"></i></li>
                 	<li><a href="index.html" id="item" class="active1">Home</a></li>
 					<li><a href="./Projects/projects.html" id="item" >Projects</a></li>
 					<li><a href="./Experience/experience.html" id="item">Experience</a></li>
@@ -39,10 +43,11 @@
 					<li><a href="./Tools/tools.html" id="item">Skills & Tools</a></li>
 					
                     <li> <button class="contact-btn"><a class="contact-button" href="./Contact/contact.html">Contact</a></button></li>
+					<li> <img src="assets/moon.png" id="icon" alt="moon"></li>
 
               </ul>
 
-			  
+			 
 				
 			  
 
@@ -53,14 +58,28 @@
 
 
   <script>
+	const closeIcon =  document.querySelector('.navbar-close-icon')
 	const menuIcon = document.querySelector('.navbar-menu-icon');
 	const navbarLinks = document.querySelector('.navbar-links');
-
+	const icon = document.querySelector('#icon');
+	const body = document.querySelector('body');
+  
 	menuIcon.addEventListener('click', () => {
-	navbarLinks.classList.toggle('active');
-});
+	  navbarLinks.classList.toggle('active');
+	});
+  
+	icon.addEventListener('click', () => {
+	  body.classList.toggle('dark-theme');
+	  
+	});
 
-</script>
+	closeIcon.addEventListener('click', () =>{
+		navbarLinks.classList.remove('active')
+
+	});
+
+  </script>
+  
 
 		  
 	
@@ -70,7 +89,7 @@
 			<div id="my-list">
 				<div id="index-title">
 					<h1>Hi!</h1>
-					<img id="title-img" src="./assets/bot.gif" alt="wink">
+					<img src="https://img.icons8.com/emoji/48/null/waving-hand-emoji.png"/>
 				</div>
 				<div id="name">
 					I'm <span id="kaveesha">Kaveesha</span> Fernando
