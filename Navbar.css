@@ -34,7 +34,7 @@
     --code-border:#d4ddff;
     --project-border:#ffffff23;
     --project-bg:#ffffff23;
-    --nav-bg: rgba(53, 0, 92, 0.45);
+    --nav-bg: rgb(35, 1, 59);
     --logo-color:rgb(255, 255, 255);
     --active-color: rgb(166, 119, 224);
 
@@ -42,7 +42,7 @@
 
 
 .navbar {
-  background: linear-gradient(180deg, var(--nav-bg) 0%, var(--nav-bg) 20%, var(--bg-color)100%);
+  background: linear-gradient(180deg, var(--nav-bg) 10%, var(--bg-color) 100%, var(--bg-color)100%);
     
     display: flex;
     justify-content: space-between;
