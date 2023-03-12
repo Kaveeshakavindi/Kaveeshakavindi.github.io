@@ -97,6 +97,26 @@ main {
 	50% { border-color: rgb(0, 123, 255)}
   }
 
+  .fav-icons{
+	display: flex;
+	padding: 20px;
+}
+
+.fav-tools{
+	padding-top: 60px;
+	color: #333333a4;
+}
+
+.tool-icon{
+	padding: 15px;
+	
+}
+
+
+
+
+
+
   hr{
 	border-style: none;
 	border: 0.2px solid #33333341;
@@ -264,7 +284,6 @@ a{
 	}
 
 	
-
 
 
 	.draw{
