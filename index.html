@@ -24,7 +24,11 @@
 
               <div class="navbar-menu-icon">
                 <i class="fa fa-bars"></i>
+				
               </div>
+			  
+		
+			  
 
               <ul class="navbar-links">
 
@@ -33,11 +37,14 @@
 					<li><a href="./Experience/experience.html" id="item">Experience</a></li>
 					<li><a href="./Studio/studio.html" id="item">Studio</a></li>
 					<li><a href="./Tools/tools.html" id="item">Skills & Tools</a></li>
+					
                     <li> <button class="contact-btn"><a class="contact-button" href="./Contact/contact.html">Contact</a></button></li>
 
               </ul>
 
-             
+			  
+				
+			  
 
             </div>
           </nav>
@@ -77,9 +84,119 @@
 					<div id="animate">Take a closer look: Download my resume</div>
 				</div>
 			</div>
-			<div class="draw">
-				<img id="draw" src="./assets/draw.gif" alt="draw">
-			</div>
+			
+		</div>
+		<hr>
+		<div class="today">
+			
+				<div class="today-title">Today I Learned</div>
+				<div class="today-sub">Short notes on what I learned today.</div>
+
+
+				<div class="til-container">
+					<div class="til-date">March 12, 2023</div>
+					<div class="til-container2">
+						<div class="til-title">React Router</div>
+						<div class="til-hashtag">#React</div>
+						<div class="til-para">After creating the 'Home' component and the 'About' component, we can create a component that defines our application's routes using 'BrowserRouter' and 'Route' from the 'react-router-dom' package.</div>
+
+
+						<div class="til-code">
+							<div class="file-btn">
+								<div class="code-file">App.js</div>
+								
+							</div>
+
+							<div class="code-container">
+							
+								<pre class="code">function <span>App</span>(){</pre>
+
+								<pre class="code"style="margin-left: 20px;">return (</pre>
+
+								<pre class="code" style="margin-left: 40px;"><<span>BrowserRouter</span>></pre>
+
+								<pre class="code" style="margin-left: 60px;"><<span>Route</span> exact path = <span>"/"</span>component=<span>{Home}</span>/></pre>
+
+								<pre class="code" style="margin-left: 60px;"><<span>Route</span> exact path = <span>"/about"</span>component=<span>{About}</span>/></pre>
+
+								<pre class="code" style="margin-left: 40px;"><<span>/BrowserRouter</span>></pre>
+
+								<pre class="code" style="margin-left: 20px;">);</pre>
+
+								<pre class="code">}</pre>
+								<pre class="code">export default <span>App</span>;</pre>
+
+							</div>
+									
+							
+						</div>
+						<div class="til-para">Finally, you can render the App component in your main index.js file:</div>
+						<div class="til-code">
+							<div class="file-btn">
+								<div class="code-file">index.js</div>
+								
+							</div>
+
+							<div class="code-container">
+							
+								<pre class="code">ReactDOM<span>.</span>render(</pre>
+
+								<pre class="code"style="margin-left: 20px;"><<span>React.StrictMode</span>></pre>
+
+								<pre class="code" style="margin-left: 40px;"><<span>App</span>/></pre>
+
+								<pre class="code"style="margin-left: 20px;"><<span>/React.StrictMode</span>>,</pre>
+
+								<pre class="code"style="margin-left: 20px;">document.<span>getElementById</span>('root')</pre>
+
+								<pre class="code">);</pre>
+
+							</div>
+									
+							
+						</div>
+						
+					</div>
+					
+				</div>
+
+
+				<div class="til-container">
+					<div class="til-date">March 05, 2023</div>
+					<div class="til-container2">
+						<div class="til-title">grid-template-columns</div>
+						<div class="til-hashtag">#CSS</div>
+						<div class="til-para">To make the first column smaller and the second column bigger, we can specify the width of each column using the fr unit, which represents a fraction of the available space. Here's an example:</div>
+
+
+						<div class="til-code">
+							<div class="file-btn">
+								<div class="code-file">file.css</div>
+								
+							</div>
+
+							<div class="code-container">
+							
+								<pre class="code">.<span>container</span>{</pre>
+
+								<pre class="code"style="margin-left: 20px;"><span>display</span>: grid;</pre>
+
+								<pre class="code"style="margin-left: 20px;"><span>grid-template-columns</span>: 1fr 2fr;</pre>
+
+								<pre class="code">}</pre>
+							</div>	
+						</div>
+						<div class="til-para">Here, first column is 1/3 of available space, second column is 2/3.</div>
+						
+							
+									
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			
 		</div>
 	</main>
 	
