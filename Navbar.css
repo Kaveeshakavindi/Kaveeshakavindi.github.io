@@ -6,7 +6,7 @@
   :root{
     --title-color: #333;
     --span-title-color:rgb(0, 119, 255);
-    --bg-color:#fff;
+    --bg-color:#f1f5fd;
     --para-color:#04040490;
     --black:#000;
     --code-span: green;
@@ -39,6 +39,8 @@
     --active-color: rgb(166, 119, 224);
 
   }
+
+  
 
 
 .navbar {
